@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">APP3B</string>
+    <string name="texto">Hola</string>
+    <string name="inicio_Casa">Hola, bienvenido a esta app de reseñas de casas</string>
+    <string name="inicio_App">Hola, bienvenido a esta app de reseñas de casas</string>
+
+
 </resources>

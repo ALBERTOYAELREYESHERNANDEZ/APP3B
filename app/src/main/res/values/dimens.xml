@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="mitamanio">24dp</dimen>
+    <dimen name="altoLogo">120dp</dimen>
+    <dimen name="altoImageViewHome">120dp</dimen>
+    <dimen name="cardCornerRadius">12dp</dimen>
+    <dimen name="marginHomeSubtitulo">10dp</dimen>
+    <dimen name="tamanioTitulo">12dp</dimen>
+    <dimen name="tamanioSubtitulo">10dp</dimen>
+</resources>
