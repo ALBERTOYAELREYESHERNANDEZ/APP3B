@@ -3,12 +3,101 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".ui.theme.fragments.ScheduleDetailDialogFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="match_parent">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp">
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/homeWall"
+                        android:scaleType="centerCrop"/>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/primary"
+                        android:alpha="0.9"/>
+                    <TextView
+                        android:id="@+id/tvItem"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="CASA"
+                        android:textSize="30sp"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"
+                        android:gravity="center_horizontal"
+                        android:layout_centerInParent="true"/>
+
+
+                </RelativeLayout>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardCornerRadius="4dp"
+                    app:cardElevation="1dp"
+                    android:layour_margin="15dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <TextView
+                            android:id="@+id/tvDetailAppCasa"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="DIRECCION"
+                            android:textSize="15sp"
+                            android:textColor="@color/primary"
+                            android:textStyle="italic|normal"
+                            android:gravity="center_horizontal"
+                            android:layout_margin="5dp"/>
+                        <TextView
+                            android:id="@+id/tvDetailAppCasas"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Texto"
+                            android:textSize="30sp"
+                            android:textColor="@color/primary"
+                            android:textStyle="bold"
+                            android:gravity="center_horizontal"
+                            android:layout_margin="5dp"/>
+                        <TextView
+                            android:id="@+id/tvDetailAppCasass"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Texto"
+                            android:textSize="15sp"
+                            android:textColor="@color/primary"
+                            android:textStyle="italic|normal"
+                            android:gravity="center_horizontal"
+                            android:layout_margin="5dp"/>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </FrameLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
 
 </FrameLayout>
