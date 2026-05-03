@@ -6,7 +6,7 @@
     android:layout_height="wrap_content"
     app:cardCornerRadius="@dimen/cardCornerRadius"
     app:cardElevation="4dp"
-    android:layout_margin="15dp">
+    android:layout_margin="50dp">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -26,17 +26,15 @@
             android:text="Nombre"
             android:textColor="@color/primary"
             android:textSize="@dimen/tamanioTitulo"
-            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal"
             android:textStyle="bold" />
-
-
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Casa"
             android:textColor="@color/primary"
-            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal"
             android:textSize="@dimen/tamanioSubtitulo" />
     </LinearLayout>
 
