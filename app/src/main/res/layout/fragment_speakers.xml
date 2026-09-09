@@ -1,27 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".ui.theme.fragments.SpeakersFragment">
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context=".ui.theme.fragments.SpeakersFragment">
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/rvSchedule"
+<androidx.recyclerview.widget.RecyclerView
+    android:id="@+id/rvSpeakers"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"/>
+
+<RelativeLayout
+    android:id="@+id/rlBase"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <View
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
-        <RelativeLayout
-            android:id="@+id/rlBase"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:background="@color/primary"
-                android:alpha="0.4"/> <!--Solo opacidad-->
-            <ProgressBar
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_centerInParent="true"/>
-            </RelativeLayout>
-        </androidx.recyclerview.widget.RecyclerView>
-    </FrameLayout>
+        android:layout_height="match_parent"
+        android:background="@color/primary"
+        android:alpha="0.4"/>
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"/>
+</RelativeLayout>
+
+</FrameLayout>
