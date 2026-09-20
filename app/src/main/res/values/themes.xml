@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-
-    <style name="Theme.APP3B" parent="android:Theme.Material.Light.NoActionBar" />
+    <!-- Hereda de Theme.Material3 sin ActionBar para que Compose controle la UI -->
+    <style name="Theme.APP3B" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Puedes dejar tus atributos de colores personalizados si los tienes -->
+    </style>
 </resources>
