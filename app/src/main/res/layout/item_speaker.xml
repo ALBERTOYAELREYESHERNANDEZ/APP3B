@@ -16,7 +16,7 @@
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="@dimen/altoImageViewHome"
-            android:src="@drawable/homeWall"
+            android:src="@drawable/homewall"
             android:layout_margin="10dp"/>
 
 

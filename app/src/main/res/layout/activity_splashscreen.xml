@@ -12,7 +12,7 @@
         android:id="@+id/Logo"
         android:layout_width="wrap_content"
         android:layout_height="@dimen/altoLogo"
-        android:src="@drawable/Logo"
+        android:src="@drawable/logo"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
