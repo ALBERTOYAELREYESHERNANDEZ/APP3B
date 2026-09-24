@@ -38,22 +38,19 @@ android {
         jvmTarget = "11"
     }
 
-    // Enable Jetpack Compose feature flag
     buildFeatures {
         compose = true
     }
-
-    // Needed ONLY if your project uses Kotlin 1.9.x or earlier:
-    // composeOptions {
-    //     kotlinCompilerExtensionVersion = "1.5.14"
-    // }
 }
 
 dependencies {
-    // Existing base dependencies
-    implementation(platform("com.google.firebase:firebase-bom:34.19.0"))
+    // --- FIREBASE DEPENDENCIES (Manejadas por BoM) ---
+    implementation(platform("com.google.firebase:firebase-bom:33.10.0"))
     implementation("com.google.firebase:firebase-analytics")
-    implementation("com.google.firebase:firebase-firestore:26.6.0")
+    implementation("com.google.firebase:firebase-auth") // <--- Agregada para Login
+    implementation("com.google.firebase:firebase-firestore") // <--- Sin versión explícita
+
+    // Base AndroidX & Material
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
     implementation(libs.material)
@@ -61,7 +58,7 @@ dependencies {
     implementation(libs.androidx.constraintlayout)
     implementation(libs.androidx.lifecycle.runtime.ktx)
 
-    // View Navigation (keep if using Fragments alongside Compose)
+    // Navigation Components (Fragments XML)
     implementation(libs.androidx.navigation.fragment.ktx)
     implementation(libs.androidx.navigation.ui.ktx)
 
