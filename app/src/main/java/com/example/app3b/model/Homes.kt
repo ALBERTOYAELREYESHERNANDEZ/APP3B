@@ -1,9 +1,10 @@
 package com.example.app3b.model
 
-import java.util.*
+import java.util.Date
+
 class Homes {
-    lateinit var tittle: String
-    lateinit var description: String
-    lateinit var tag: String
-    lateinit var datetime: Date
+    var tittle: String = ""
+    var description: String = ""
+    var tag: String = ""
+    var datetime: Date = Date()
 }

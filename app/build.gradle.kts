@@ -49,6 +49,8 @@ dependencies {
     implementation("com.google.firebase:firebase-analytics")
     implementation("com.google.firebase:firebase-auth") // <--- Agregada para Login
     implementation("com.google.firebase:firebase-firestore") // <--- Sin versión explícita
+    implementation("com.google.firebase:firebase-database")
+    implementation(libs.androidx.activity.ktx) //<--- Libreria para agregar base de datos y conexion en android
 
     // Base AndroidX & Material
     implementation(libs.androidx.core.ktx)
